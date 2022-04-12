@@ -1,0 +1,93 @@
+{			
+    "format_version": 1,			
+    "imports": [			
+        {			
+            "target_table": "PROJ_7::MAT_MAST",			
+            "source_data": {			
+                "data_type": "CSV",			
+                "file_name": "PROJ7::MATERIAL.CSV",			
+                "has_header": true			
+            },			
+			
+            "import_settings": {			
+                "import_columns": [			
+        "MATID",			
+        "MAT_GROUP",			
+        "CREATEDON",			
+        "MAT_TYPE",			
+        "OLD_MATID",			
+        "PLANT",			
+        "COMP_CODE"			
+                                   ] }			
+          }			
+        ,			
+            {                     			
+                                          			
+            "target_table": "PROJ_7::ORDERS",			
+            "source_data": {			
+                "data_type": "CSV",			
+                "file_name": "PROJ7::ORDERS.CSV",			
+                "has_header": true			
+            },			
+			
+            "import_settings": {			
+                "import_columns": [			
+                  "ORDID",			
+                  "ORDER_DATE",			
+                  "REQ_DATE",			
+                  "CUSTID",			
+                  "MATID",			
+                  "EMPID",			
+                  "ORDER_QTY",			
+                  "UNIT",			
+                  "PRICE",			
+                  "CURRENCY",
+                  "YR"
+                                ]			
+                                 }			
+       			
+                                 			
+       }			
+       ,			
+            {                     			
+                                          			
+            "target_table": "PROJ_7::CUST_MAST",			
+            "source_data": {			
+                "data_type": "CSV",			
+                "file_name": "PROJ7::CUSTOMER.CSV",			
+                "has_header": true			
+            },			
+			
+            "import_settings": {			
+                "import_columns": [			
+                 "CUSTID",			
+                 "CUST_NAME",			
+                 "REGION",			
+                 "COUNTRY",			
+                 "EMAILID",			
+                 "CREDIT_CARD"			
+			
+                                ]			
+                                 }			
+       	       }		
+       ,			
+            {                     			
+                                          			
+            "target_table": "PROJ_7::MAT_TXT",			
+            "source_data": {			
+                "data_type": "CSV",			
+                "file_name": "PROJ7::MAT_TXT.CSV",			
+                "has_header": true			
+            },			
+			
+            "import_settings": {			
+                "import_columns": [			
+                 "MATID",			
+                 "SPRAS",			
+                 "MAT_TEXT"			
+			
+                                ]			
+                                 }			
+       	       }		
+           ]			
+}			
